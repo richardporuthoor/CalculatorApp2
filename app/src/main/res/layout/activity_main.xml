@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85BAAF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/findQuotient"
+        android:layout_width="93dp"
+        android:layout_height="126dp"
+        android:background="#0DED05"
+        android:foreground="@drawable/division"
+        android:onClick="findQuotient"
+        android:text="divide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <Button
+        android:id="@+id/findProduct"
+        android:layout_width="98dp"
+        android:layout_height="90dp"
+        android:background="#FFD500"
+        android:foreground="@drawable/multiplication"
+        android:onClick="findProduct"
+        android:text="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <Button
+        android:id="@+id/findDifference"
+        android:layout_width="125dp"
+        android:layout_height="74dp"
+        android:background="#FF7903"
+        android:foreground="@drawable/subtraction"
+        android:onClick="findDifference"
+        android:text="subtract"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/findSum"
+        android:layout_width="100dp"
+        android:layout_height="113dp"
+        android:background="@color/black"
+        android:foreground="@drawable/maxresdefault"
+        android:onClick="findSum"
+        android:text="add"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <EditText
+        android:id="@+id/num1ET"
+        android:layout_width="304dp"
+        android:layout_height="40dp"
+        android:background="@color/purple_200"
+        android:ems="10"
+        android:hint="first number here foo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/num2ET"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:autoText="true"
+        android:background="@color/purple_200"
+        android:ems="10"
+        android:hint="second number here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="290dp"
+        android:layout_height="43dp"
+        android:background="@color/teal_700"
+        android:hint="heres the answer crip"
+        android:textColor="#ED0B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
